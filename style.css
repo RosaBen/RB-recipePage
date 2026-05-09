@@ -134,7 +134,7 @@ footer p {
 
 /* Responsive desktop */
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 800px) and (orientation: landscape) {
   .container {
     width: 100%;
     max-width: 768px;
@@ -162,6 +162,98 @@ footer p {
 
   .table-row {
     width: 500px;
+    margin: 1rem auto;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: white;
+  }
+
+  header {
+    padding-top: 1rem;
+  }
+
+  .image {
+    display: block;
+    width: 700px;
+    border-radius: 1rem;
+  }
+
+  .title,
+  .preparation-time,
+  footer {
+    margin: 1rem auto;
+    width: 700px;
+  }
+
+  main section {
+    width: 700px;
+    margin: 0 auto 1.5rem;
+  }
+
+  main section:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .table-row {
+    width: 500px;
+    margin: 1rem auto;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 5rem auto 0;
+    background-color: white;
+  }
+
+  header {
+    padding-top: 0.1rem;
+  }
+
+  .image {
+    display: block;
+    width: 1200px;
+    border-radius: 1rem;
+  }
+
+  .title,
+  .preparation-time,
+  footer {
+    margin: 1rem auto;
+    width: 1200px;
+  }
+
+  main section {
+    width: 1200px;
+    margin: 0 auto 1.5rem;
+  }
+
+  main section:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .table-row {
+    width: 1000px;
     margin: 1rem auto;
     display: block;
     display: flex;

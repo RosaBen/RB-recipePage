@@ -6,3 +6,44 @@
   font-family: "Young Serif", serif;
   box-sizing: border-box;
 }
+
+/* :root {
+  --main-font: hsl(24, 5%, 18%);
+} */
+/* Layout */
+
+body {
+  background-color: #f2e5d8;
+  /* color: var(--main-font); */
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+  color: hsl(24, 5%, 18%);
+}
+
+header h2 {
+  color: hsl(332, 51%, 32%);
+}
+
+main h2,
+tr td:nth-child(even) {
+  color: hsl(14, 45%, 36%);
+}
+
+li span {
+  font-weight: bold;
+}
+
+p,
+li,
+td:nth-child(odd) {
+  color: hsl(30, 10%, 34%);
+}
